@@ -61,7 +61,7 @@ img{
   text-decoration: #1abc9c;
   font-size: 45px
 }
-#Intro {
+#Intro, #DIV, #analysis, #Results {
   width: 100%;
   padding: 50px 0;
   text-align: center;
@@ -192,6 +192,18 @@ li a {
     color: white;
     text-align: center;
   }
+
+  .p1_im{
+    padding: 45px;
+    width:800px;}
+
+  .p1{
+      text-align: left;
+      font-size: 24px;
+      margin: 4px;
+      color: white;
+
+    }
   @media only screen and (max-width:2000px){
     .body_1 {
       width: 100%;
@@ -244,6 +256,15 @@ li a {
       text-align: center;
       font-size: 45px
     }
+
+    .p1{
+      text-align: left;
+      font-size: 24px;
+      margin: 4px;
+      color: white;
+
+    }
+
     #Intro {
       width: 100%;
       padding: 50px 0;
