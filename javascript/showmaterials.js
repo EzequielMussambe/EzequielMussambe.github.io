@@ -43,3 +43,11 @@ function Re2Function() {
         }
         }
     
+        function prFunction() {
+            var x = document.getElementById('proc');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            }

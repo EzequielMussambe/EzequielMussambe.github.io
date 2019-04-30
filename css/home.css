@@ -61,7 +61,7 @@ img{
   text-decoration: #1abc9c;
   font-size: 45px
 }
-#Intro, #DIV, #analysis, #Results_1, #Results_2 {
+#Intro, #DIV, #analysis, #Results_1, #Results_2,#proc{
   width: 100%;
   padding: 50px 0;
   text-align: center;
@@ -83,6 +83,7 @@ img{
   /*background-image:url('/images/one.png');*/
   background-color: white;
   border-radius:20px;
+  text-decoration:none;
   float: left;
   width:500px;
   height:70%;
@@ -303,6 +304,7 @@ li a {
     .project_1 {
 
       background-color: white;
+      text-decoration:none;
       border-radius:20px;
       float: left;
       width:500px;
