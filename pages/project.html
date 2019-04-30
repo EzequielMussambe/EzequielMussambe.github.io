@@ -25,14 +25,15 @@
                 <ul><a href="#" onclick="Introduction()">Introduction of the Topic</a></ul><br>
                 <ul><a href="#"  onclick="fFunction()">DATA & Software</a></ul><br>
                 <ul><a href="#" onclick="anaFunction()">Analysis and Proccessing</a></ul><br>
-                <ul><a href="#"  onclick="ReFunction()">Results</a></ul><br>
+                <ul><a href="#"  onclick="ReFunction()">Results 1</a></ul><br>
+                <ul><a href="#"  onclick="Re2Function()">Results 2</a></ul><br>
 </ul>
 
 
         </div>
         <div id="Intro" style="display: none;">
-                <p>INTRODUCTIONS</p><br>
-                <p class="p1">The goal of this project is to identify the markets and facilities that offer 
+                <p style="color:blue">INTRODUCTIONS</p><br>
+                <p class="p1">&nbsp The goal of this project is to identify the markets and facilities that offer 
                     goods and services in all seven (7) counties of Luanda. Also, the second goal 
                     of this project is to measure the accessibility and suitability of those 
                     services based on their locations and the population demand.<br><br>
@@ -48,55 +49,73 @@
 
                         <head style="text-align: center;">2</head>
                         <p style="text-align: center;">DATASETS AND SOFWARE</p><br>
-                    
-                        <p  class="p1">Dataset
-                                For this project, we used ArcGIS and QGIS, to successfully 
+                        <p style=font-size:20px;color:blue>SOFTWARE</p>
+                        <p  class="p1"> &nbsp We used ArcGIS and QGIS, to successfully 
                                 accomplish the task. With those GIS tools, We were able to
                                  identify the locations of all facilities and find out 
                                  its level of accessibility and suitability.<br><br> 
-                                 <lo class="p1">We used different datasets:
+                                 <p style=font-size:20px;color:blue>DATASETS</p>
+                                 <lo class="p1">
                                  <li class="p1">State Dataset-in Shapefile</li>
                               <li class="p1">Supermarket Dataset-in Shapefile</li>
                               <li class="p1">Hospital Dataset-in Shapefile</li>
                               <li class="p1">Roads Network dataset-in Shapefile</li>
                               <li class="p1"> Population vectorized dataset-in Shapefile</lo> </li>
         
-                            <img class="p1_im"  src="../images/format.png">
+                            <img class="p1_im"  src="../images/ever.jpg">
 
                                 </p>
-                                <a href="https://www.google.com/search?biw=1920&bih=969&tbm=isch&sa=1&ei=cSKcXLiJIoaCjwS2l434BQ&q=shapefile+and+tif++images&oq=shapefile+and+tif++images&gs_l=img.3...35130.41555..41984...0.0..0.502.1173.6j2j5-1......1....1..gws-wiz-img.kvJm9qGqE6A#imgrc=-Lbyy7sCMEGAPM:" target="_blank">
-                                    Image Source Data from the google search</a>
+                                <a > Done in ArcGIS by Isaias and Ezequiel, 4/30/2019</a>
                         </div>
 
 
                         <div id="analysis" style="display: none;">
                                 <head style="text-align: center;">3</head>
                                 <p style="text-align: center;">PROCCESSES</p><br>
-                                <p class="p1"> <li class="p1">We Clipped our Datasets because to get only Luanda as Capital</li><br>
-                                    <li class="p1">We Clipped our Datasets because to get only Luanda as Capital</li>
-                                    <br><br>
-                                    <img class="p1_im" src="../images/luanda_city.png">
+                                <p class="p1"> <li class="p1">Clip the Layers to get only Luanda as Capital</li>
+                                    <li class="p1">Vectorize the raster population Dataset into points</li>
+                                    <li class="p1">Convert Every Single shapefile to <a style=font-size:30px;float:right; href="https://epsg.io/22033" target="_blank">UTM ZONE 33S</a>
+                                    </li>
+                                   <li class="p1">Use Roads dataset to create newtwork dataset</li>
+                                        <li class="p1">Use Network Analyst ArcGIS extension tool</li>
+                                             <li class="p1">Run the analsysis based on time/distance</li><br>
+                                              <li class="p1">Maximal Coverage Analysis</li>
+                                    <img class="p1_im" >
                                 </p>
                               
                                 </div>
 
-                                <div id="Results" style="display: none;">
-                                        <p>RESULTS & EXPECTATIONS</p><br>
-                                        <p class="p1">The goal of this project is to identify the markets and facilities that offer 
-                                            goods and services in all seven (7) counties of Luanda. Also, the second goal 
-                                            of this project is to measure the accessibility and suitability of those 
-                                            services based on their locations and the population demand.<br><br>
-                                            <img class="p1_im" src="../images/luanda_city.png">
-                                        </p>
-                        
-                        
-                                      
+                                <div id="Results_1" style="display: none;">
+                                        <p>LOCATION-ALLOCATION OF SUPERMARKET</p><br>
+                                        <p class="p1">
+                                                &nbsp This map shows the final result of the analysis performed. We had 33 supermarkets
+                                                and 587 points of a group of people out of those 517 groups of people were indentified and they are able to
+                                                 access those supermarkets with 20 minutes driving.<br> <br>&nbsp This is pretty good even though we used a
+                                                 cutoff population of 300 or greater people per points. However, the points
+                                                  left out my have high population density.
+                                            <br><br>
+                                           
+                                        </p> 
+                                        <img class="p1_im" src="../images/super.jpg">  <p>This Map was done in ArcGIS by Isaias and Ezequiel, 4-30-2019</p>            
+                                        </div>
+
+                                <div id="Results_2" style="display: none;">
+                                        <p>LOCATION-ALLOCATION OF SUPERMARKET</p><br>
+                                        <p class="p1">
+                                                &nbsp This map shows the final result of the Network Analysis Location-Allocation. We had 25 Hospitals
+                                                and 800 points of a group of people out of those only 54 groups of people were indentified and they are able to
+                                                 access those hospitals within 40 minutes driving.&nbsp This is pretty bad even with high
+                                                    cutoff time.
+                                            <br><br>
+                                            
+                                        </p> 
+                                        <img class="p1_im" src="../images/hos.jpg">  <p>This Map was done in ArcGIS by Isaias and Ezequiel, 4-30-2019</p>            
                                         </div>
 
                         
  
     <footer class="footer">
-        &copy; 2019 GIS WEB &nbsp;  Design by Ezequiel Mussambe & Isaias <a href="/">Facebook</a>
+        &copy; 2019 GIS WEB &nbsp;  Design by Ezequiel Mussambe & Isaias
         </footer>
     </div>
 </body>

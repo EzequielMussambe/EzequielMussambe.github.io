@@ -27,7 +27,15 @@ function anaFunction() {
     }
     }
 function ReFunction() {
-        var x = document.getElementById('Results');
+        var x = document.getElementById('Results_1');
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        }
+function Re2Function() {
+        var x = document.getElementById('Results_2');
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
