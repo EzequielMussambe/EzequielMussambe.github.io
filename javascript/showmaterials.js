@@ -1,5 +1,4 @@
 
-
 function Introduction() {
     var x = document.getElementById('Intro');
     if (x.style.display === "none") {
